@@ -50,8 +50,8 @@ Main Attributes
 | ----------------------- | ------------------------ |
 | Running Experience      | Beginner                 |
 | Started Running         | June 2026                |
-| Current Goal            | First Full 10K           |
-| Long-term Goal          | Half Marathon → Marathon |
+| Current Goal            | Amartha Half Marathon 2026 (target: September 2026) |
+| Long-term Goal          | Marathon                 |
 | Training Days           | 4x/week                  |
 | Preferred Training Time | Morning                  |
 | Favorite Run            | Easy Run ☀️              |

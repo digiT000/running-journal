@@ -1,6 +1,6 @@
-# 🏃 Road to 10K
+# 🏃 Road to Half Marathon
 
-![Goal](https://img.shields.io/badge/Goal-10K-blue)
+![Goal](https://img.shields.io/badge/Goal-Half_Marathon_Sept_2026-blue)
 
 ![Current](https://img.shields.io/badge/Current-7K-success)
 
@@ -14,7 +14,7 @@
 
 Welcome to my personal running journal.
 
-This repository documents my journey from an overweight beginner runner to completing my first **10K**, with the long-term goal of running a **Half Marathon** and eventually a **Marathon**.
+This repository documents my journey from an overweight beginner runner toward my primary goal: the **Amartha Half Marathon 2026** (target: September 2026), building through 8K, 9K, and 10K milestones along the way, with a **Marathon** as the long-term goal beyond that.
 
 As a software engineer, I wanted to treat my fitness journey like a software project:
 
@@ -42,6 +42,8 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 
 # 🎯 Current Goal
 
+**Primary Goal: Amartha Half Marathon 2026 (target: September 2026)**
+
 - [x] Build a running habit
 - [x] First Full 5K
 - [x] First Full 6K
@@ -49,7 +51,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 - [ ] First Full 8K
 - [ ] First Full 9K
 - [ ] First Full 10K
-- [ ] Half Marathon (21.1K)
+- [ ] 🎯 Half Marathon (21.1K) — Amartha Half Marathon 2026
 - [ ] Marathon (42.2K)
 
 ---
@@ -177,9 +179,9 @@ First 8K
       ↓
 First 9K
       ↓
-🏆 First 10K
+First 10K
       ↓
-Half Marathon
+🏆 Half Marathon (Amartha 2026 — target: September 2026)
       ↓
 Marathon
 ```

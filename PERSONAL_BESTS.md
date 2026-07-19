@@ -2,7 +2,7 @@
 
 This document tracks all personal records achieved throughout my running journey.
 
-Last Updated: 2026-07-15
+Last Updated: 2026-07-18
 
 ---
 
@@ -16,7 +16,7 @@ Last Updated: 2026-07-15
 | 2 Mile      | 24:35   | 7:38/km  | 2026-07-10 |
 | 3K          | ~22:00  | ~7:20/km | 2026-07-03 |
 | 5K          | 38:51   | 7:46/km  | 2026-07-10 |
-| Longest Run | 7.60 KM | 8:27/km  | 2026-07-15 |
+| Longest Run | 8.15 KM | 8:22/km  | 2026-07-18 |
 
 ---
 
@@ -52,6 +52,8 @@ Last Updated: 2026-07-15
 | 2026-06-24 |  6.28 KM |
 | 2026-07-04 |  7.14 KM |
 | 2026-07-15 |  7.60 KM |
+| 2026-07-17 |  7.80 KM |
+| 2026-07-18 |  8.15 KM |
 
 ---
 
@@ -61,7 +63,8 @@ Last Updated: 2026-07-15
 
 - [ ] Sub-38 5K
 - [ ] Sub-35 5K
-- [ ] First Full 8K
+- [x] First Full 8K
+- [ ] First Full 9K
 - [ ] First Full 10K
 - [ ] First Half Marathon (21.1 KM)
 
@@ -81,7 +84,9 @@ Last Updated: 2026-07-15
 
 🏆 5K PB: 38:51
 
-🏆 Longest Run: 7.60 KM
+🏆 Longest Run: 8.15 KM
+
+🏆 Longest Weekly Mileage: 33.84 KM (week of 2026-07-13)
 
 🏆 Lowest Recorded Weight: 89.7 KG
 

@@ -21,7 +21,7 @@ First Full 6K ✅
 First Full 7K ✅
   │
   ▼
-First Full 8K
+First Full 8K ✅
   │
   ▼
 First Full 9K
@@ -52,18 +52,21 @@ This is now the primary goal driving training, replacing the previous standalone
 
 ## 🎯 Goal
 
-**First Full 8K**
+**First Full 9K**
 
 ### Success Criteria
 
-- [ ] Complete 8 KM without walking
+- [ ] Complete 9 KM without walking
 - [ ] Finish injury-free
 - [ ] Maintain conversational pace
+- [ ] Carry adequate hydration for the full distance
 - [ ] Recover well within 24 hours
 
 Status:
 
 🟡 In Progress
+
+**Previous goal — First Full 8K:** ✅ Completed 2026-07-18 (8.15 KM @ 8:22/km, no walking, finished injury-free).
 
 _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 
@@ -77,7 +80,7 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 - [x] Complete First Full 5K
 - [x] Complete First Full 6K
 - [x] Complete First Full 7K
-- [ ] Complete First Full 8K
+- [x] Complete First Full 8K
 - [ ] Complete First Full 9K
 - [ ] Complete First Full 10K
 
@@ -86,7 +89,7 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 ## ❤️ Health
 
 - [x] Lose first 4 KG
-- [ ] Reach 90 KG
+- [x] Reach 90 KG
 - [ ] Reach 88 KG
 - [ ] Reach 85 KG
 - [ ] Reach 80 KG
@@ -126,7 +129,8 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 | First Full 5K           | ✅     |
 | First Full 6K           | ✅     |
 | First Full 7K           | ✅     |
-| First Full 8K           | ⏳     |
+| First Full 8K           | ✅     |
+| First Full 9K           | ⏳     |
 | First Full 10K          | ⏳     |
 | Half Marathon (Amartha 2026, Sept) | 🟡 In Progress |
 | Marathon                | 🔒     |
@@ -139,7 +143,7 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 
 Current
 
-~8:40/km
+~8:22/km
 
 Target
 
@@ -151,7 +155,7 @@ Target
 
 Current
 
-7.14 KM
+8.15 KM
 
 Target
 
@@ -163,7 +167,7 @@ Target
 
 Current
 
-26.56 KM
+33.84 KM
 
 Target
 
@@ -182,7 +186,7 @@ Long-term
 | 96 KG  | ✅ Started |
 | 94 KG  | ✅         |
 | 92 KG  | ✅         |
-| 90 KG  | ⏳         |
+| 90 KG  | ✅         |
 | 88 KG  | ⏳         |
 | 85 KG  | ⏳         |
 | 80 KG  | 🎯 Goal    |

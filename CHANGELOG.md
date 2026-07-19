@@ -4,6 +4,33 @@ All notable changes to my running journey will be documented in this file.
 
 The format is inspired by **Keep a Changelog** and follows a personal versioning system.
 
+## [v1.3.0] - 2026-07-18
+
+### 🏆 Milestone
+
+- 🎉 Completed First Full 8K
+- Longest run updated to **8.15 KM**
+
+### 🎉 Added
+
+- Successfully completed Runna Easy Run 8K
+- Entered the **89 KG** weight range
+
+### 💪 Improved
+
+- Better pacing consistency
+- Improved patience during difficult first kilometers
+- Better aerobic endurance
+
+### 📊 Stats
+
+- Distance: 8.15 KM
+- Pace: 8:22/km
+- Average HR: 156 bpm
+- Weight: 89.8 KG
+
+---
+
 ## [v1.2.0] - 2026-07-17
 
 ### 🎉 Added
@@ -267,19 +294,25 @@ The format is inspired by **Keep a Changelog** and follows a personal versioning
 | v0.6.0  | First Full 6K                             |
 | v0.7.0  | First Full 7K                             |
 | v0.8.0  | Stable Easy Run & Weekly Mileage 26.56 KM |
+| v0.8.5  | First Effortless Easy Run                 |
+| v0.9.0  | First Structured Interval Workout         |
+| v1.0.0  | Below 90 KG & 5K PB 38:51                 |
+| v1.1.0  | First Night Run & First Double Run Day    |
+| v1.2.0  | First 400m Interval Workout               |
+| v1.3.0  | First Full 8K                             |
 
 ---
 
 # 🚧 Next Release
 
-## v0.9.0
+## v1.4.0
 
 Target Features:
 
-- [ ] First Full 8K
-- [ ] Complete first Drop Set workout
-- [ ] Weekly mileage > 28 KM
-- [ ] Weight below 91 KG
+- [ ] First Full 9K
+- [ ] Weekly mileage > 35 KM
+- [ ] Weight below 89 KG
+- [ ] Carry proper hydration on runs beyond 8 KM
 
 ---
 

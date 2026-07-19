@@ -4,6 +4,26 @@ All notable changes to my running journey will be documented in this file.
 
 The format is inspired by **Keep a Changelog** and follows a personal versioning system.
 
+## [v1.2.0] - 2026-07-17
+
+### 🎉 Added
+
+- Completed first structured 400m interval workout
+- Finished all 8 interval repetitions
+- Began structured speed training for 5K and Half Marathon
+
+### 💪 Improved
+
+- Maintained consistent pacing across all interval reps
+- Successfully ran faster than the target interval pace
+- Improved confidence in speed workouts
+
+### 📊 Stats
+
+- Distance: 7.80 KM
+- Pace: 8:36/km
+- Average HR: 155 bpm
+
 ---
 
 ## [v1.1.0] - 2026-07-15

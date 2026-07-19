@@ -2,11 +2,11 @@
 
 ![Goal](https://img.shields.io/badge/Goal-Half_Marathon_Sept_2026-blue)
 
-![Current](https://img.shields.io/badge/Current-8K-success)
+![Current](https://img.shields.io/badge/Current-10K-success)
 
-![Weight](https://img.shields.io/badge/Weight-89.8kg-orange)
+![Weight](https://img.shields.io/badge/Weight-90.3kg-orange)
 
-![Mileage](https://img.shields.io/badge/Total-123.25KM-red)
+![Mileage](https://img.shields.io/badge/Total-122.68KM-red)
 
 ![Status](https://img.shields.io/badge/Status-Training-green)
 
@@ -14,7 +14,7 @@
 
 Welcome to my personal running journal.
 
-This repository documents my journey from an overweight beginner runner toward my primary goal: the **Amartha Half Marathon 2026** (target: September 2026), building through 9K and 10K milestones along the way, with a **Marathon** as the long-term goal beyond that.
+This repository documents my journey from an overweight beginner runner toward my primary goal: the **Amartha Half Marathon 2026** (target: September 2026). The 5K → 10K progression is complete; training is now Half Marathon base building, with a **Marathon** as the long-term goal beyond that.
 
 As a software engineer, I wanted to treat my fitness journey like a software project:
 
@@ -33,7 +33,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 | Age             | 27                 |
 | Height          | 170 cm             |
 | Starting Weight | **96 kg**          |
-| Current Weight  | **89.8 kg**        |
+| Current Weight  | **90.3 kg**        |
 | Watch           | Huawei Band 11     |
 | Training App    | Runna              |
 | Coach           | AI Coach (ChatGPT) |
@@ -49,8 +49,8 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 - [x] First Full 6K
 - [x] First Full 7K
 - [x] First Full 8K
-- [ ] First Full 9K
-- [ ] First Full 10K
+- [x] First Full 9K
+- [x] First Full 10K
 - [ ] 🎯 Half Marathon (21.1K) — Amartha Half Marathon 2026
 - [ ] Marathon (42.2K)
 
@@ -60,12 +60,12 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 
 | Metric                 |        Value |
 | ---------------------- | -----------: |
-| Total Runs             |           21 |
-| Total Distance         | **123.25 KM** |
-| Longest Run            |  **8.15 KM** |
-| Longest Weekly Mileage | **33.84 KM** |
-| Easy Pace              |     ~8:22/km |
-| Easy Run HR            |  149–157 bpm |
+| Total Sessions         |            20 |
+| Total Distance         | **122.68 KM** |
+| Longest Run            |  **10.29 KM** |
+| Longest Weekly Mileage |  **44.13 KM** |
+| Easy Pace              |      ~8:28/km |
+| Easy Run HR            |   149–157 bpm |
 
 ---
 
@@ -73,9 +73,10 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 
 | Distance    | Time    |
 | ----------- | ------- |
-| 3K          | ~22 min |
-| 5K          | 38:51   |
-| Longest Run | 8.15 KM |
+| 3K          | ~22 min  |
+| 5K          | 38:51    |
+| 10K         | ~1:24:45 |
+| Longest Run | 10.29 KM |
 
 ---
 
@@ -87,6 +88,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 - ✅ First Full 6K
 - ✅ First Full 7K
 - ✅ First Full 8K
+- ✅ First Full 10K
 - ✅ Dropped below 90 KG
 - ✅ Bought Huawei Band 11
 - ✅ Started using Runna
@@ -179,9 +181,9 @@ First 7K ✅
       ↓
 First 8K ✅
       ↓
-First 9K
+First 9K ✅
       ↓
-First 10K
+First 10K ✅
       ↓
 🏆 Half Marathon (Amartha 2026 — target: September 2026)
       ↓
@@ -224,5 +226,7 @@ Especially my AI Coach, who has been analyzing every run, celebrating every mile
 
 2026-07-18 — 🏆 First Full 8K (8.15 KM)
 
+2026-07-19 — 🏆 First Full 10K (10.29 KM) — first double-digit distance
+
 🚧 Next milestone:
-First Full 9K
+Half Marathon base building — long run beyond 12 KM

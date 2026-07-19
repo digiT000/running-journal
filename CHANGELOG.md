@@ -4,6 +4,33 @@ All notable changes to my running journey will be documented in this file.
 
 The format is inspired by **Keep a Changelog** and follows a personal versioning system.
 
+## [v1.4.0] - 2026-07-19
+
+### 🏆 Milestone
+
+- 🎉 Completed First Full 10K
+- Reached double-digit running distance for the first time
+
+### 🎉 Added
+
+- Completed an easy 10K with controlled effort
+- Maintained aerobic pace throughout the run
+
+### 💪 Improved
+
+- Better endurance over longer distances
+- Lower average heart rate compared to previous long runs
+- Strong mental resilience in the final kilometers
+
+### 📊 Stats
+
+- Distance: 10.29 KM
+- Pace: 8:28/km
+- Average HR: 152 bpm
+- Weight: 90.3 KG
+
+---
+
 ## [v1.3.0] - 2026-07-18
 
 ### 🏆 Milestone
@@ -300,19 +327,20 @@ The format is inspired by **Keep a Changelog** and follows a personal versioning
 | v1.1.0  | First Night Run & First Double Run Day    |
 | v1.2.0  | First 400m Interval Workout               |
 | v1.3.0  | First Full 8K                             |
+| v1.4.0  | First Full 10K & Weekly Mileage 44.13 KM  |
 
 ---
 
 # 🚧 Next Release
 
-## v1.4.0
+## v1.5.0
 
 Target Features:
 
-- [ ] First Full 9K
-- [ ] Weekly mileage > 35 KM
+- [ ] Extend the long run beyond 12 KM
+- [ ] Hold weekly mileage above 45 KM
 - [ ] Weight below 89 KG
-- [ ] Carry proper hydration on runs beyond 8 KM
+- [ ] Upgrade to a larger water bottle for 10K+ runs
 
 ---
 

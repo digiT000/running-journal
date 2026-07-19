@@ -24,10 +24,10 @@ First Full 7K ✅
 First Full 8K ✅
   │
   ▼
-First Full 9K
+First Full 9K ✅
   │
   ▼
-First Full 10K
+First Full 10K ✅
   │
   ▼
 🏅 Half Marathon (21.1K) — Target: September 2026
@@ -52,21 +52,27 @@ This is now the primary goal driving training, replacing the previous standalone
 
 ## 🎯 Goal
 
-**First Full 9K**
+**Amartha Half Marathon 2026 — Base Building**
+
+The full 5K → 10K progression is now complete. Training shifts from "unlock the next distance" to building sustainable Half Marathon volume.
 
 ### Success Criteria
 
-- [ ] Complete 9 KM without walking
-- [ ] Finish injury-free
-- [ ] Maintain conversational pace
-- [ ] Carry adequate hydration for the full distance
-- [ ] Recover well within 24 hours
+- [ ] Extend the long run beyond 12 KM
+- [ ] Hold weekly mileage above 40 KM consistently
+- [ ] Solve hydration for runs over 10 KM
+- [ ] Stay injury-free through the build
+- [ ] Keep easy runs genuinely conversational
 
 Status:
 
 🟡 In Progress
 
-**Previous goal — First Full 8K:** ✅ Completed 2026-07-18 (8.15 KM @ 8:22/km, no walking, finished injury-free).
+**Previous goals:**
+
+- **First Full 8K** ✅ 2026-07-18 (8.15 KM @ 8:22/km)
+- **First Full 9K** ✅ 2026-07-19 (passed through during the 10K)
+- **First Full 10K** ✅ 2026-07-19 (10.29 KM @ 8:28/km, no walking, finished injury-free)
 
 _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 
@@ -81,8 +87,8 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 - [x] Complete First Full 6K
 - [x] Complete First Full 7K
 - [x] Complete First Full 8K
-- [ ] Complete First Full 9K
-- [ ] Complete First Full 10K
+- [x] Complete First Full 9K
+- [x] Complete First Full 10K
 
 ---
 
@@ -130,8 +136,8 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 | First Full 6K           | ✅     |
 | First Full 7K           | ✅     |
 | First Full 8K           | ✅     |
-| First Full 9K           | ⏳     |
-| First Full 10K          | ⏳     |
+| First Full 9K           | ✅     |
+| First Full 10K          | ✅     |
 | Half Marathon (Amartha 2026, Sept) | 🟡 In Progress |
 | Marathon                | 🔒     |
 
@@ -143,7 +149,7 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 
 Current
 
-~8:22/km
+~8:28/km
 
 Target
 
@@ -155,11 +161,15 @@ Target
 
 Current
 
-8.15 KM
+10.29 KM
 
 Target
 
-10 KM
+12 KM
+
+Long-term
+
+21.1 KM
 
 ---
 
@@ -167,15 +177,15 @@ Target
 
 Current
 
-33.84 KM
+44.13 KM
 
 Target
 
-30 KM
+45 KM
 
 Long-term
 
-40 KM+
+50 KM+
 
 ---
 

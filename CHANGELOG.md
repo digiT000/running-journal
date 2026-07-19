@@ -6,6 +6,29 @@ The format is inspired by **Keep a Changelog** and follows a personal versioning
 
 ---
 
+## [v1.1.0] - 2026-07-15
+
+### 🏆 Milestone
+
+- 🌙 Completed First Night Run
+- 🎉 New Longest Recorded Run: 7.60 KM
+- Completed first Double Run Day
+- Estimated first 10K effort due to accidental paused tracking
+
+### 💪 Improved
+
+- Easy pace continues to feel sustainable
+- Aerobic endurance improving steadily
+- Comfortable running for more than 60 minutes
+
+### 📊 Stats
+
+- Distance: 7.60 KM
+- Pace: 8:27/km
+- Average HR: 157 bpm
+
+---
+
 ## [v1.0.0] - 2026-07-10
 
 ### 🏆 Milestone

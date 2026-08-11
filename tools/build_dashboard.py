@@ -167,9 +167,10 @@ def pace_minutes(v):
     return to_minutes(v.replace("/km", "").strip())
 
 
-# Ordered keyword -> canonical bucket. First match wins, so "recovery walk"
-# must be tested before the bare "recovery" and "walk" cases.
+# Ordered keyword -> canonical bucket. First match wins, so "run-walk" and
+# "recovery walk" must be tested before the bare "recovery" and "walk" cases.
 ACTIVITY_RULES = [
+    (("run-walk", "run/walk", "run walk"), "Run-Walk"),
     (("walk",), "Recovery Walk"),
     (("interval", "repeat", "400m", "on-off", "tempo", "speed"), "Interval Run"),
     (("long",), "Long Run"),

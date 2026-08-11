@@ -6,7 +6,7 @@
 
 ![Weight](https://img.shields.io/badge/Weight-90.1kg-orange)
 
-![Mileage](https://img.shields.io/badge/Total-186.17KM-red)
+![Mileage](https://img.shields.io/badge/Total-219.79KM-red)
 
 ![Status](https://img.shields.io/badge/Status-Training-green)
 
@@ -60,8 +60,8 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 
 | Metric                 |        Value |
 | ---------------------- | -----------: |
-| Total Sessions         |            27 |
-| Total Distance         | **186.17 KM** |
+| Total Sessions         |            34 |
+| Total Distance         | **219.79 KM** |
 | Longest Run            |  **12.31 KM** |
 | Longest Weekly Mileage |  **44.13 KM** |
 | Easy Pace              |      ~8:28/km |
@@ -215,7 +215,9 @@ Especially my AI Coach, who has been analyzing every run, celebrating every mile
 
 ## 📜 Journey Timeline
 
-2026-06-16 — First training session
+2026-06-03 — First recorded session (4.53 KM run-walk)
+
+2026-06-16 — First continuous runs (no walk breaks)
 
 2026-06-28 — 🏆 First Full 5K
 

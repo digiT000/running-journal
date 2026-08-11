@@ -8,10 +8,10 @@ Class:
 Beginner Runner
 
 Level:
-9 🟢
+10 🟢
 
 Experience:
-186.17 / 200 KM
+219.79 / 250 KM
 
 Current Quest:
 🏅 Half Marathon Base Building

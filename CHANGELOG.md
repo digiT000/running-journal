@@ -370,16 +370,31 @@ The format is inspired by **Keep a Changelog** and follows a personal versioning
 
 ## [v0.2.0] - 2026-06-16
 
+### 🎉 Added
+
+- Transitioned from run-walk sessions to continuous running
+- Continued building toward the First Full 5K goal
+
+### 📊 Stats
+
+- Distance: 4.04 KM
+- Pace: ~10:00/km
+- Weight: 92 KG
+
+---
+
+## [v0.1.0] - 2026-06-03
+
 ### 🚀 Started
 
-- Began structured running journey
+- Began the running journey with run-walk sessions
 - Goal: Become healthier and complete First Full 5K
-- Initial weight: **96 KG**
+- Starting weight: **~96 KG** (first logged weight 92 KG)
 
 ### 📊 Initial Stats
 
-- First recorded run: 4 KM
-- Pace: 9:59/km
+- First recorded session: 4.53 KM run-walk
+- Pace: ~11:06/km
 
 ---
 
@@ -387,7 +402,8 @@ The format is inspired by **Keep a Changelog** and follows a personal versioning
 
 | Version | Milestone                                 |
 | ------- | ----------------------------------------- |
-| v0.2.0  | Started Running Journey                   |
+| v0.1.0  | Started Running Journey (run-walk)        |
+| v0.2.0  | First Continuous Runs                     |
 | v0.3.0  | First 6K+                                 |
 | v0.4.0  | First Full 5K                             |
 | v0.5.0  | Easy Full 5K                              |

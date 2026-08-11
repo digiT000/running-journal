@@ -58,7 +58,8 @@ The full 5K → 10K progression is now complete. Training shifts from "unlock th
 
 ### Success Criteria
 
-- [ ] Extend the long run beyond 12 KM
+- [x] Extend the long run beyond 12 KM _(12.31 KM on 2026-08-07)_
+- [ ] Extend the long run to 15 KM
 - [ ] Hold weekly mileage above 40 KM consistently
 - [ ] Solve hydration for runs over 10 KM
 - [ ] Stay injury-free through the build
@@ -138,6 +139,8 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 | First Full 8K           | ✅     |
 | First Full 9K           | ✅     |
 | First Full 10K          | ✅     |
+| First Full 12K          | ✅     |
+| First Official 10K Event | ✅    |
 | Half Marathon (Amartha 2026, Sept) | 🟡 In Progress |
 | Marathon                | 🔒     |
 
@@ -161,11 +164,11 @@ Target
 
 Current
 
-10.29 KM
+12.31 KM
 
 Target
 
-12 KM
+15 KM
 
 Long-term
 

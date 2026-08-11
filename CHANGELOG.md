@@ -4,6 +4,79 @@ All notable changes to my running journey will be documented in this file.
 
 The format is inspired by **Keep a Changelog** and follows a personal versioning system.
 
+## [v1.7.0] - 2026-08-09
+
+### 🏆 Milestone
+
+- 🎉 Completed **First Official 10K Running Event** (Nobel Charity Run)
+- Handled four uphill sections while keeping effort under control
+
+### 🏅 Personal Best
+
+- New 10K PB: **1:17:02** (previous 1:19:51, −2:49)
+- New 5K PB: **37:15** (previous 38:51, −1:36)
+- New 5 Mile PB: **01:02:22** (first recorded)
+
+### 📊 Stats
+
+- Distance: 10 KM
+- Finish Time: 1:17:02 (front-row start, ≈ chip time)
+- Average HR: 160 bpm
+- Weight: 89 KG
+
+### 📝 Notes
+
+- Watch stopped recording around 8.67 KM; final GPS pace unavailable
+- Lesson: check watch battery before race day
+
+---
+
+## [v1.6.0] - 2026-08-07
+
+### 🏆 Milestone
+
+- 🎉 New Longest Run: **12.31 KM**
+- Pushed distance while attempting to reach 15 KM
+
+### 💪 Improved
+
+- Extended long-run distance beyond the previous 12.09 KM
+- Weight reached **89.8 KG**
+
+### 📊 Stats
+
+- Distance: 12.31 KM
+- Pace: 8:17/km
+- Average HR: 163 bpm
+- Weight: 89.8 KG
+
+---
+
+## [v1.5.0] - 2026-07-26
+
+### 🏆 Milestone
+
+- 🎉 Completed **First Full 12K** (12.09 KM)
+- First CFD running experience
+
+### 🏅 Personal Best
+
+- New 10K PB: **01:19:51** (split from the 12K run)
+
+### 💪 Improved
+
+- Better hydration by carrying two water bottles on the long run
+- Initial foot discomfort cleared after the first kilometer
+
+### 📊 Stats
+
+- Distance: 12.09 KM
+- Pace: 8:05/km
+- Average HR: 161 bpm
+- Weight: 90.6 KG
+
+---
+
 ## [v1.4.0] - 2026-07-19
 
 ### 🏆 Milestone
@@ -328,19 +401,22 @@ The format is inspired by **Keep a Changelog** and follows a personal versioning
 | v1.2.0  | First 400m Interval Workout               |
 | v1.3.0  | First Full 8K                             |
 | v1.4.0  | First Full 10K & Weekly Mileage 44.13 KM  |
+| v1.5.0  | First Full 12K & 10K PB 01:19:51          |
+| v1.6.0  | New Longest Run 12.31 KM                   |
+| v1.7.0  | First Official 10K Event & 10K PB 1:17:02 & 5K PB 37:15 & 5 Mile PB 01:02:22 |
 
 ---
 
 # 🚧 Next Release
 
-## v1.5.0
+## v1.8.0
 
 Target Features:
 
-- [ ] Extend the long run beyond 12 KM
+- [x] Extend the long run beyond 12 KM _(12.31 KM on 2026-08-07)_
+- [ ] Extend the long run to 15 KM
 - [ ] Hold weekly mileage above 45 KM
 - [ ] Weight below 89 KG
-- [ ] Upgrade to a larger water bottle for 10K+ runs
 
 ---
 

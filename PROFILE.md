@@ -8,10 +8,10 @@ Class:
 Beginner Runner
 
 Level:
-8 🟢
+9 🟢
 
 Experience:
-122.68 / 150 KM
+186.17 / 200 KM
 
 Current Quest:
 🏅 Half Marathon Base Building
@@ -39,7 +39,7 @@ Main Attributes
 | Nationality     | Indonesia 🇮🇩 |
 | Height          | 170 cm       |
 | Starting Weight | 96 kg        |
-| Current Weight  | 90.3 kg      |
+| Current Weight  | 90.1 kg      |
 | Goal Weight     | 75–80 kg     |
 
 ---
@@ -80,7 +80,7 @@ Main Attributes
 | ------------------- | ----------: |
 | Easy Run HR         | 149–157 bpm |
 | Average Training HR | 150–165 bpm |
-| Highest Recorded HR |     179 bpm |
+| Highest Recorded HR |     180 bpm |
 
 ---
 
@@ -88,10 +88,10 @@ Main Attributes
 
 | Metric                 |    Value |
 | ---------------------- | -------: |
-| Longest Run            | 10.29 km |
+| Longest Run            | 12.31 km |
 | Longest Weekly Mileage | 44.13 km |
 | Easy Pace              | ~8:28/km |
-| Comfortable Distance   |  5–10 km |
+| Comfortable Distance   | 5–12 km  |
 
 ---
 
@@ -100,9 +100,10 @@ Main Attributes
 | Distance    | Time    |
 | ----------- | ------- |
 | 3K          | ~22 min  |
-| 5K          | 38:51    |
-| 10K         | ~1:24:45 |
-| Longest Run | 10.29 km |
+| 5K          | 37:15    |
+| 5 Mile      | 01:02:22 |
+| 10K         | 1:17:02  |
+| Longest Run | 12.31 km |
 
 ---
 
@@ -169,13 +170,15 @@ Post-run:
 - ✅ First Full 8K
 - ✅ First Full 9K
 - ✅ First Full 10K
+- ✅ First Full 12K
+- ✅ First Official 10K Event (Nobel Charity Run)
 - ⏳ Half Marathon (21.1 KM)
 
 ---
 
 # 🚀 Next Objective
 
-🏅 Build toward the Amartha Half Marathon 2026 — extend the long run beyond 12 KM
+🏅 Build toward the Amartha Half Marathon 2026 — extend the long run toward 15 KM
 
 ---
 

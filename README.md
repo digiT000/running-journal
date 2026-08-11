@@ -2,11 +2,11 @@
 
 ![Goal](https://img.shields.io/badge/Goal-Half_Marathon_Sept_2026-blue)
 
-![Current](https://img.shields.io/badge/Current-10K-success)
+![Current](https://img.shields.io/badge/Current-12K-success)
 
-![Weight](https://img.shields.io/badge/Weight-90.3kg-orange)
+![Weight](https://img.shields.io/badge/Weight-90.1kg-orange)
 
-![Mileage](https://img.shields.io/badge/Total-122.68KM-red)
+![Mileage](https://img.shields.io/badge/Total-186.17KM-red)
 
 ![Status](https://img.shields.io/badge/Status-Training-green)
 
@@ -33,7 +33,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 | Age             | 27                 |
 | Height          | 170 cm             |
 | Starting Weight | **96 kg**          |
-| Current Weight  | **90.3 kg**        |
+| Current Weight  | **90.1 kg**        |
 | Watch           | Huawei Band 11     |
 | Training App    | Runna              |
 | Coach           | AI Coach (ChatGPT) |
@@ -60,9 +60,9 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 
 | Metric                 |        Value |
 | ---------------------- | -----------: |
-| Total Sessions         |            20 |
-| Total Distance         | **122.68 KM** |
-| Longest Run            |  **10.29 KM** |
+| Total Sessions         |            27 |
+| Total Distance         | **186.17 KM** |
+| Longest Run            |  **12.31 KM** |
 | Longest Weekly Mileage |  **44.13 KM** |
 | Easy Pace              |      ~8:28/km |
 | Easy Run HR            |   149–157 bpm |
@@ -74,9 +74,10 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 | Distance    | Time    |
 | ----------- | ------- |
 | 3K          | ~22 min  |
-| 5K          | 38:51    |
-| 10K         | ~1:24:45 |
-| Longest Run | 10.29 KM |
+| 5K          | 37:15    |
+| 5 Mile      | 01:02:22 |
+| 10K         | 1:17:02  |
+| Longest Run | 12.31 KM |
 
 ---
 
@@ -89,6 +90,8 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 - ✅ First Full 7K
 - ✅ First Full 8K
 - ✅ First Full 10K
+- ✅ First Full 12K
+- ✅ First Official 10K Event (Nobel Charity Run)
 - ✅ Dropped below 90 KG
 - ✅ Bought Huawei Band 11
 - ✅ Started using Runna
@@ -228,5 +231,11 @@ Especially my AI Coach, who has been analyzing every run, celebrating every mile
 
 2026-07-19 — 🏆 First Full 10K (10.29 KM) — first double-digit distance
 
+2026-07-26 — 🏆 First Full 12K (12.09 KM)
+
+2026-08-07 — 🏆 New Longest Run 12.31 KM
+
+2026-08-09 — 🏆 First Official 10K Event (Nobel Charity Run) + 10K PB 1:17:02 + 5K PB 37:15 + 5 Mile PB 01:02:22
+
 🚧 Next milestone:
-Half Marathon base building — long run beyond 12 KM
+Half Marathon base building — extend the long run toward 15 KM

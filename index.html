@@ -73,6 +73,16 @@
   }
   .theme-btn:hover { color: var(--text-primary); }
 
+  .periods { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
+  .period-btn {
+    background: var(--surface-1); color: var(--text-secondary);
+    border: 1px solid var(--border); border-radius: 999px;
+    padding: 6px 14px; font-size: 13px; cursor: pointer; font-family: inherit;
+    font-variant-numeric: tabular-nums; transition: color .1s, background .1s, border-color .1s;
+  }
+  .period-btn:hover { color: var(--text-primary); }
+  .period-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
   .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); gap: 12px; margin-bottom: 28px; }
   .tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; box-shadow: var(--shadow); }
   .tile .k { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; }
@@ -137,6 +147,8 @@
     <button class="theme-btn" id="theme">Toggle theme</button>
   </header>
 
+  <nav class="periods" id="periods" aria-label="Time period"></nav>
+
   <section class="tiles" id="tiles"></section>
 
   <section class="card">
@@ -188,7 +200,7 @@
 <div class="tooltip" id="tip" role="status" aria-live="polite"></div>
 
 <script>
-const DATA = {"generated": "2026-08-11 16:10", "runs": [{"date": "2026-06-22", "kind": "interval-run", "label": "Interval Run", "title": "Interval Run", "distance": 5.13, "duration": 44.6667, "pace": 8.667, "avgHr": 151, "maxHr": 173, "cadence": null, "weight": 92.5, "milestones": [], "tags": ["interval-run", "june"], "file": "logs/2026/2026-06/2026-06-22.md"}, {"date": "2026-06-24", "kind": "interval-run", "label": "Interval Run", "title": "Interval Run", "distance": 6.28, "duration": 51.6667, "pace": 8.233, "avgHr": 161, "maxHr": 168, "cadence": null, "weight": 93.3, "milestones": ["First Run Beyond 6K"], "tags": ["interval-run", "june", "first-6k", "personal-best"], "file": "logs/2026/2026-06/2026-06-24.md"}, {"date": "2026-06-25", "kind": "recovery-walk", "label": "Recovery Walk", "title": "Recovery Walk + Strength Training", "distance": 3.85, "duration": 46.2, "pace": 12.0, "avgHr": 104, "maxHr": 113, "cadence": null, "weight": 92.1, "milestones": [], "tags": ["recovery", "strength", "walk", "june"], "file": "logs/2026/2026-06/2026-06-25.md"}, {"date": "2026-06-26", "kind": "interval-run", "label": "Interval Run", "title": "Interval Run", "distance": 5.66, "duration": 48.6, "pace": 8.383, "avgHr": 158, "maxHr": 174, "cadence": null, "weight": 93.0, "milestones": [], "tags": ["interval-run", "june", "endurance"], "file": "logs/2026/2026-06/2026-06-26.md"}, {"date": "2026-06-28", "kind": "easy-run", "label": "Easy Run", "title": "First Full Continuous 5K", "distance": 5.49, "duration": 43.92, "pace": 8.0, "avgHr": 165, "maxHr": 177, "cadence": null, "weight": 93.1, "milestones": ["First Full Continuous 5K"], "tags": ["june", "easy-run", "first-5k", "personal-best"], "file": "logs/2026/2026-06/2026-06-28.md"}, {"date": "2026-06-30", "kind": "easy-run", "label": "Easy Run", "title": "Easy Run 5K", "distance": 5.03, "duration": 44.63, "pace": 8.87, "avgHr": 149, "maxHr": 163, "cadence": null, "weight": 92.5, "milestones": [], "tags": ["june", "easy-run", "aerobic-base"], "file": "logs/2026/2026-06/2026-06-30.md"}, {"date": "2026-07-01", "kind": "long-run", "label": "Long Run", "title": "First Full Continuous 6K", "distance": 6.13, "duration": 52.63, "pace": 8.58, "avgHr": 151, "maxHr": 166, "cadence": null, "weight": 92.7, "milestones": ["First Full Continuous 6K"], "tags": ["july", "long-run", "first-6k"], "file": "logs/2026/2026-07/2026-07-01.md"}, {"date": "2026-07-03", "kind": "recovery-run", "label": "Recovery Run", "title": "Recovery Run Before Long Run", "distance": 3.11, "duration": 24.0, "pace": 7.72, "avgHr": 156, "maxHr": 172, "cadence": null, "weight": 91.3, "milestones": ["Estimated 3K PB (~22 minutes)"], "tags": ["july", "recovery-run", "pre-long-run", "3k"], "file": "logs/2026/2026-07/2026-07-03.md"}, {"date": "2026-07-04", "kind": "long-run", "label": "Long Run", "title": "First Full Continuous 7K", "distance": 7.14, "duration": 58.97, "pace": 8.27, "avgHr": 163, "maxHr": 177, "cadence": 163, "weight": 91.2, "milestones": ["First Full Continuous 7K"], "tags": ["july", "runna", "long-run", "first-7k"], "file": "logs/2026/2026-07/2026-07-04.md"}, {"date": "2026-07-05", "kind": "easy-run", "label": "Easy Run", "title": "Comfortable Easy Run 5K", "distance": 5.15, "duration": 45.02, "pace": 8.73, "avgHr": 153, "maxHr": 179, "cadence": 164, "weight": 91.8, "milestones": [], "tags": ["july", "easy-run", "runna", "aerobic-base"], "file": "logs/2026/2026-07/2026-07-05.md"}, {"date": "2026-07-07", "kind": "easy_run", "label": "Easy Run", "title": "Easy Run 6.59K", "distance": 6.59, "duration": 54.8667, "pace": 8.333, "avgHr": 158, "maxHr": 170, "cadence": 166, "weight": 90.5, "milestones": [], "tags": ["easy-run", "runna", "base-building", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-07.md"}, {"date": "2026-07-08", "kind": "interval", "label": "Interval Run", "title": "1K Repeats Session", "distance": 6.49, "duration": 56.65, "pace": 8.733, "avgHr": 149, "maxHr": 169, "cadence": 160, "weight": 91.2, "milestones": ["First structured interval workout in Half Marathon training"], "tags": ["interval", "repeats", "runna", "speed-work", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-08.md"}, {"date": "2026-07-10", "kind": "easy_run", "label": "Easy Run", "title": "Easy Run 5.56K", "distance": 5.56, "duration": 45.4, "pace": 8.167, "avgHr": 154, "maxHr": 178, "cadence": 161, "weight": 89.7, "milestones": ["Body weight below 90kg (89.7kg)", "5K Personal Best: 38:51"], "tags": ["easy-run", "runna", "half-marathon-training", "sub-90kg", "pb-5k"], "file": "logs/2026/2026-07/2026-07-10.md"}, {"date": "2026-07-11", "kind": "long_run", "label": "Long Run", "title": "Long Run 7K", "distance": 6.94, "duration": 58.8833, "pace": 8.367, "avgHr": 158, "maxHr": 170, "cadence": 164, "weight": 90.1, "milestones": [], "tags": ["long-run", "runna", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-11.md"}, {"date": "2026-07-13", "kind": "interval", "label": "Interval Run", "title": "On-Off Ks Session", "distance": 5.68, "duration": 46.7167, "pace": 8.217, "avgHr": 151, "maxHr": 170, "cadence": 164, "weight": 90.2, "milestones": [], "tags": ["interval", "runna", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-13.md"}, {"date": "2026-07-15", "kind": "easy_run", "label": "Easy Run", "title": "First Night Run — Longest Recorded Run", "distance": 7.6, "duration": 64.0, "pace": 8.45, "avgHr": 157, "maxHr": null, "cadence": null, "weight": 91.1, "milestones": ["First Night Run", "Longest Recorded Run"], "tags": ["easy-run", "night-run", "half-marathon-training", "endurance"], "file": "logs/2026/2026-07/2026-07-15-02.md"}, {"date": "2026-07-15", "kind": "easy_run", "label": "Easy Run", "title": "Easy Run 4.61K", "distance": 4.61, "duration": 39.1667, "pace": 8.5, "avgHr": 148, "maxHr": 160, "cadence": 164, "weight": 91.1, "milestones": [], "tags": ["easy-run", "runna", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-15.md"}, {"date": "2026-07-17", "kind": "400m-repeats", "label": "Interval Run", "title": "400m Repeats - First Structured Interval Session", "distance": 7.8, "duration": 67.0833, "pace": 8.6, "avgHr": 155, "maxHr": 174, "cadence": 154, "weight": null, "milestones": [], "tags": ["interval", "speed", "runna", "400m-repeats"], "file": "logs/2026/2026-07/2026-07-17.md"}, {"date": "2026-07-18", "kind": "easy-run", "label": "Easy Run", "title": "First Full 8K Easy Run", "distance": 8.15, "duration": 68.1667, "pace": 8.367, "avgHr": 156, "maxHr": 168, "cadence": 165, "weight": 89.8, "milestones": [], "tags": ["easy-run", "endurance", "runna", "first-8k", "milestone"], "file": "logs/2026/2026-07/2026-07-18.md"}, {"date": "2026-07-19", "kind": "easy-run", "label": "Easy Run", "title": "First Full 10K Easy Run", "distance": 10.29, "duration": 87.1833, "pace": 8.467, "avgHr": 152, "maxHr": 165, "cadence": 164, "weight": 90.3, "milestones": [], "tags": ["easy-run", "endurance", "runna", "first-10k", "milestone"], "file": "logs/2026/2026-07/2026-07-19.md"}, {"date": "2026-07-26", "kind": "easy-run", "label": "Easy Run", "title": "First Full 12K Long Run", "distance": 12.09, "duration": 97.7833, "pace": 8.083, "avgHr": 161, "maxHr": 179, "cadence": 163, "weight": 90.6, "milestones": ["First 12K", "10K PB — 01:19:51"], "tags": ["long-run", "endurance", "runna", "first-12k", "milestone", "pb"], "file": "logs/2026/2026-07/2026-07-26.md"}, {"date": "2026-07-31", "kind": "easy-run", "label": "Easy Run", "title": "Easy Run After Training Break", "distance": 8.27, "duration": 70.4167, "pace": 8.517, "avgHr": 153, "maxHr": 174, "cadence": null, "weight": 90.5, "milestones": [], "tags": ["easy-run", "endurance", "comeback", "hoka-challenger-8"], "file": "logs/2026/2026-07/2026-07-31.md"}, {"date": "2026-08-02", "kind": "walking", "label": "Recovery Walk", "title": "First CFD Walk", "distance": 8.11, "duration": 106.5667, "pace": 13.133, "avgHr": 97, "maxHr": 133, "cadence": null, "weight": 90.8, "milestones": [], "tags": ["walking", "cfd", "active-recovery", "low-intensity"], "file": "logs/2026/2026-08/2026-08-02.md"}, {"date": "2026-08-06", "kind": "5k-run", "label": "Recovery Run", "title": "5K Comeback Run", "distance": 5.21, "duration": 44.3833, "pace": 8.517, "avgHr": 150, "maxHr": 166, "cadence": null, "weight": 90.0, "milestones": [], "tags": ["5k", "comeback", "recovery", "running"], "file": "logs/2026/2026-08/2026-08-06.md"}, {"date": "2026-08-07", "kind": "long-run", "label": "Long Run", "title": "12K Long Run — Pushing Distance", "distance": 12.31, "duration": 102.0333, "pace": 8.283, "avgHr": 163, "maxHr": 180, "cadence": null, "weight": 89.8, "milestones": [], "tags": ["long-run", "endurance", "distance", "12k", "training"], "file": "logs/2026/2026-08/2026-08-07.md"}, {"date": "2026-08-09", "kind": "10k-running-event", "label": "Run", "title": "First 10K Running Event", "distance": 10.0, "duration": 77.0333, "pace": 7.703, "avgHr": 160, "maxHr": 171, "cadence": null, "weight": 89.0, "milestones": ["First official 10K running event", "10K PB — 01:17:02", "5K PB — 37:15", "5 Mile PB — 01:02:22"], "tags": ["10k", "race", "event", "milestone", "pb", "first-10k-event"], "file": "logs/2026/2026-08/2026-08-09.md"}, {"date": "2026-08-10", "kind": "easy-run", "label": "Easy Run", "title": "Post-Race Recovery Easy Run", "distance": 7.5, "duration": 70.8667, "pace": 9.45, "avgHr": 145, "maxHr": 150, "cadence": null, "weight": 90.1, "milestones": [], "tags": ["easy-run", "recovery-run", "post-race", "aerobic", "runna"], "file": "logs/2026/2026-08/2026-08-10.md"}], "weekly": [{"week": "2026-06-22", "km": 26.41, "runs": 5}, {"week": "2026-06-29", "km": 26.56, "runs": 5}, {"week": "2026-07-06", "km": 25.58, "runs": 4}, {"week": "2026-07-13", "km": 44.13, "runs": 6}, {"week": "2026-07-20", "km": 12.09, "runs": 1}, {"week": "2026-07-27", "km": 16.38, "runs": 2}, {"week": "2026-08-03", "km": 27.52, "runs": 3}, {"week": "2026-08-10", "km": 7.5, "runs": 1}], "totals": {"sessions": 27, "distance": 186.2, "duration": 27.0, "longest": 12.31, "startWeight": 92.5, "currentWeight": 90.1, "bestWeeklyKm": 44.13}};
+const DATA = {"generated": "2026-08-11 16:17", "runs": [{"date": "2026-06-22", "kind": "interval-run", "label": "Interval Run", "title": "Interval Run", "distance": 5.13, "duration": 44.6667, "pace": 8.667, "avgHr": 151, "maxHr": 173, "cadence": null, "weight": 92.5, "milestones": [], "tags": ["interval-run", "june"], "file": "logs/2026/2026-06/2026-06-22.md"}, {"date": "2026-06-24", "kind": "interval-run", "label": "Interval Run", "title": "Interval Run", "distance": 6.28, "duration": 51.6667, "pace": 8.233, "avgHr": 161, "maxHr": 168, "cadence": null, "weight": 93.3, "milestones": ["First Run Beyond 6K"], "tags": ["interval-run", "june", "first-6k", "personal-best"], "file": "logs/2026/2026-06/2026-06-24.md"}, {"date": "2026-06-25", "kind": "recovery-walk", "label": "Recovery Walk", "title": "Recovery Walk + Strength Training", "distance": 3.85, "duration": 46.2, "pace": 12.0, "avgHr": 104, "maxHr": 113, "cadence": null, "weight": 92.1, "milestones": [], "tags": ["recovery", "strength", "walk", "june"], "file": "logs/2026/2026-06/2026-06-25.md"}, {"date": "2026-06-26", "kind": "interval-run", "label": "Interval Run", "title": "Interval Run", "distance": 5.66, "duration": 48.6, "pace": 8.383, "avgHr": 158, "maxHr": 174, "cadence": null, "weight": 93.0, "milestones": [], "tags": ["interval-run", "june", "endurance"], "file": "logs/2026/2026-06/2026-06-26.md"}, {"date": "2026-06-28", "kind": "easy-run", "label": "Easy Run", "title": "First Full Continuous 5K", "distance": 5.49, "duration": 43.92, "pace": 8.0, "avgHr": 165, "maxHr": 177, "cadence": null, "weight": 93.1, "milestones": ["First Full Continuous 5K"], "tags": ["june", "easy-run", "first-5k", "personal-best"], "file": "logs/2026/2026-06/2026-06-28.md"}, {"date": "2026-06-30", "kind": "easy-run", "label": "Easy Run", "title": "Easy Run 5K", "distance": 5.03, "duration": 44.63, "pace": 8.87, "avgHr": 149, "maxHr": 163, "cadence": null, "weight": 92.5, "milestones": [], "tags": ["june", "easy-run", "aerobic-base"], "file": "logs/2026/2026-06/2026-06-30.md"}, {"date": "2026-07-01", "kind": "long-run", "label": "Long Run", "title": "First Full Continuous 6K", "distance": 6.13, "duration": 52.63, "pace": 8.58, "avgHr": 151, "maxHr": 166, "cadence": null, "weight": 92.7, "milestones": ["First Full Continuous 6K"], "tags": ["july", "long-run", "first-6k"], "file": "logs/2026/2026-07/2026-07-01.md"}, {"date": "2026-07-03", "kind": "recovery-run", "label": "Recovery Run", "title": "Recovery Run Before Long Run", "distance": 3.11, "duration": 24.0, "pace": 7.72, "avgHr": 156, "maxHr": 172, "cadence": null, "weight": 91.3, "milestones": ["Estimated 3K PB (~22 minutes)"], "tags": ["july", "recovery-run", "pre-long-run", "3k"], "file": "logs/2026/2026-07/2026-07-03.md"}, {"date": "2026-07-04", "kind": "long-run", "label": "Long Run", "title": "First Full Continuous 7K", "distance": 7.14, "duration": 58.97, "pace": 8.27, "avgHr": 163, "maxHr": 177, "cadence": 163, "weight": 91.2, "milestones": ["First Full Continuous 7K"], "tags": ["july", "runna", "long-run", "first-7k"], "file": "logs/2026/2026-07/2026-07-04.md"}, {"date": "2026-07-05", "kind": "easy-run", "label": "Easy Run", "title": "Comfortable Easy Run 5K", "distance": 5.15, "duration": 45.02, "pace": 8.73, "avgHr": 153, "maxHr": 179, "cadence": 164, "weight": 91.8, "milestones": [], "tags": ["july", "easy-run", "runna", "aerobic-base"], "file": "logs/2026/2026-07/2026-07-05.md"}, {"date": "2026-07-07", "kind": "easy_run", "label": "Easy Run", "title": "Easy Run 6.59K", "distance": 6.59, "duration": 54.8667, "pace": 8.333, "avgHr": 158, "maxHr": 170, "cadence": 166, "weight": 90.5, "milestones": [], "tags": ["easy-run", "runna", "base-building", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-07.md"}, {"date": "2026-07-08", "kind": "interval", "label": "Interval Run", "title": "1K Repeats Session", "distance": 6.49, "duration": 56.65, "pace": 8.733, "avgHr": 149, "maxHr": 169, "cadence": 160, "weight": 91.2, "milestones": ["First structured interval workout in Half Marathon training"], "tags": ["interval", "repeats", "runna", "speed-work", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-08.md"}, {"date": "2026-07-10", "kind": "easy_run", "label": "Easy Run", "title": "Easy Run 5.56K", "distance": 5.56, "duration": 45.4, "pace": 8.167, "avgHr": 154, "maxHr": 178, "cadence": 161, "weight": 89.7, "milestones": ["Body weight below 90kg (89.7kg)", "5K Personal Best: 38:51"], "tags": ["easy-run", "runna", "half-marathon-training", "sub-90kg", "pb-5k"], "file": "logs/2026/2026-07/2026-07-10.md"}, {"date": "2026-07-11", "kind": "long_run", "label": "Long Run", "title": "Long Run 7K", "distance": 6.94, "duration": 58.8833, "pace": 8.367, "avgHr": 158, "maxHr": 170, "cadence": 164, "weight": 90.1, "milestones": [], "tags": ["long-run", "runna", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-11.md"}, {"date": "2026-07-13", "kind": "interval", "label": "Interval Run", "title": "On-Off Ks Session", "distance": 5.68, "duration": 46.7167, "pace": 8.217, "avgHr": 151, "maxHr": 170, "cadence": 164, "weight": 90.2, "milestones": [], "tags": ["interval", "runna", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-13.md"}, {"date": "2026-07-15", "kind": "easy_run", "label": "Easy Run", "title": "First Night Run — Longest Recorded Run", "distance": 7.6, "duration": 64.0, "pace": 8.45, "avgHr": 157, "maxHr": null, "cadence": null, "weight": 91.1, "milestones": ["First Night Run", "Longest Recorded Run"], "tags": ["easy-run", "night-run", "half-marathon-training", "endurance"], "file": "logs/2026/2026-07/2026-07-15-02.md"}, {"date": "2026-07-15", "kind": "easy_run", "label": "Easy Run", "title": "Easy Run 4.61K", "distance": 4.61, "duration": 39.1667, "pace": 8.5, "avgHr": 148, "maxHr": 160, "cadence": 164, "weight": 91.1, "milestones": [], "tags": ["easy-run", "runna", "half-marathon-training"], "file": "logs/2026/2026-07/2026-07-15.md"}, {"date": "2026-07-17", "kind": "400m-repeats", "label": "Interval Run", "title": "400m Repeats - First Structured Interval Session", "distance": 7.8, "duration": 67.0833, "pace": 8.6, "avgHr": 155, "maxHr": 174, "cadence": 154, "weight": null, "milestones": [], "tags": ["interval", "speed", "runna", "400m-repeats"], "file": "logs/2026/2026-07/2026-07-17.md"}, {"date": "2026-07-18", "kind": "easy-run", "label": "Easy Run", "title": "First Full 8K Easy Run", "distance": 8.15, "duration": 68.1667, "pace": 8.367, "avgHr": 156, "maxHr": 168, "cadence": 165, "weight": 89.8, "milestones": [], "tags": ["easy-run", "endurance", "runna", "first-8k", "milestone"], "file": "logs/2026/2026-07/2026-07-18.md"}, {"date": "2026-07-19", "kind": "easy-run", "label": "Easy Run", "title": "First Full 10K Easy Run", "distance": 10.29, "duration": 87.1833, "pace": 8.467, "avgHr": 152, "maxHr": 165, "cadence": 164, "weight": 90.3, "milestones": [], "tags": ["easy-run", "endurance", "runna", "first-10k", "milestone"], "file": "logs/2026/2026-07/2026-07-19.md"}, {"date": "2026-07-26", "kind": "easy-run", "label": "Easy Run", "title": "First Full 12K Long Run", "distance": 12.09, "duration": 97.7833, "pace": 8.083, "avgHr": 161, "maxHr": 179, "cadence": 163, "weight": 90.6, "milestones": ["First 12K", "10K PB — 01:19:51"], "tags": ["long-run", "endurance", "runna", "first-12k", "milestone", "pb"], "file": "logs/2026/2026-07/2026-07-26.md"}, {"date": "2026-07-31", "kind": "easy-run", "label": "Easy Run", "title": "Easy Run After Training Break", "distance": 8.27, "duration": 70.4167, "pace": 8.517, "avgHr": 153, "maxHr": 174, "cadence": null, "weight": 90.5, "milestones": [], "tags": ["easy-run", "endurance", "comeback", "hoka-challenger-8"], "file": "logs/2026/2026-07/2026-07-31.md"}, {"date": "2026-08-02", "kind": "walking", "label": "Recovery Walk", "title": "First CFD Walk", "distance": 8.11, "duration": 106.5667, "pace": 13.133, "avgHr": 97, "maxHr": 133, "cadence": null, "weight": 90.8, "milestones": [], "tags": ["walking", "cfd", "active-recovery", "low-intensity"], "file": "logs/2026/2026-08/2026-08-02.md"}, {"date": "2026-08-06", "kind": "5k-run", "label": "Recovery Run", "title": "5K Comeback Run", "distance": 5.21, "duration": 44.3833, "pace": 8.517, "avgHr": 150, "maxHr": 166, "cadence": null, "weight": 90.0, "milestones": [], "tags": ["5k", "comeback", "recovery", "running"], "file": "logs/2026/2026-08/2026-08-06.md"}, {"date": "2026-08-07", "kind": "long-run", "label": "Long Run", "title": "12K Long Run — Pushing Distance", "distance": 12.31, "duration": 102.0333, "pace": 8.283, "avgHr": 163, "maxHr": 180, "cadence": null, "weight": 89.8, "milestones": [], "tags": ["long-run", "endurance", "distance", "12k", "training"], "file": "logs/2026/2026-08/2026-08-07.md"}, {"date": "2026-08-09", "kind": "10k-running-event", "label": "Run", "title": "First 10K Running Event", "distance": 10.0, "duration": 77.0333, "pace": 7.703, "avgHr": 160, "maxHr": 171, "cadence": null, "weight": 89.0, "milestones": ["First official 10K running event", "10K PB — 01:17:02", "5K PB — 37:15", "5 Mile PB — 01:02:22"], "tags": ["10k", "race", "event", "milestone", "pb", "first-10k-event"], "file": "logs/2026/2026-08/2026-08-09.md"}, {"date": "2026-08-10", "kind": "easy-run", "label": "Easy Run", "title": "Post-Race Recovery Easy Run", "distance": 7.5, "duration": 70.8667, "pace": 9.45, "avgHr": 145, "maxHr": 150, "cadence": null, "weight": 90.1, "milestones": [], "tags": ["easy-run", "recovery-run", "post-race", "aerobic", "runna"], "file": "logs/2026/2026-08/2026-08-10.md"}], "weekly": [{"week": "2026-06-22", "km": 26.41, "runs": 5}, {"week": "2026-06-29", "km": 26.56, "runs": 5}, {"week": "2026-07-06", "km": 25.58, "runs": 4}, {"week": "2026-07-13", "km": 44.13, "runs": 6}, {"week": "2026-07-20", "km": 12.09, "runs": 1}, {"week": "2026-07-27", "km": 16.38, "runs": 2}, {"week": "2026-08-03", "km": 27.52, "runs": 3}, {"week": "2026-08-10", "km": 7.5, "runs": 1}], "totals": {"sessions": 27, "distance": 186.2, "duration": 27.0, "longest": 12.31, "startWeight": 92.5, "currentWeight": 90.1, "bestWeeklyKm": 44.13}};
 const SVG_NS = "http://www.w3.org/2000/svg";
 
 /* ---------- helpers ---------- */
@@ -261,9 +273,15 @@ function bar(x, y, w, hgt, fill) {
 }
 
 /* ---------- charts ---------- */
-function weeklyChart() {
+function emptyState(hostId, msg) {
+  document.getElementById(hostId).innerHTML =
+    `<p class="note" style="margin:8px 2px 6px">${msg}</p>`;
+}
+
+function weeklyChart(weekly) {
   const host = document.getElementById("c-weekly");
-  const d = DATA.weekly;
+  const d = weekly;
+  if (!d.length) return emptyState("c-weekly", "No sessions in this period.");
   const f = frame(host, { h: 250 });
   const TARGET = 30;
   const max = Math.max(TARGET, ...d.map((w) => w.km)) * 1.12;
@@ -300,9 +318,10 @@ function weeklyChart() {
   f.svg.appendChild(el("line", { class: "axis-line", x1: f.padL, x2: f.padL + f.iw, y1: f.padT + f.ih, y2: f.padT + f.ih }));
 }
 
-function sessionsChart() {
+function sessionsChart(runs, longest) {
   const host = document.getElementById("c-sessions");
-  const d = DATA.runs.filter((r) => r.distance);
+  const d = runs.filter((r) => r.distance);
+  if (!d.length) return emptyState("c-sessions", "No sessions in this period.");
   const f = frame(host, { h: 280, padB: 52 });
   const max = Math.max(...d.map((r) => r.distance)) * 1.14;
   yAxis(f, 0, max, (v) => v.toFixed(1) + " km");
@@ -316,7 +335,7 @@ function sessionsChart() {
     const y = f.padT + f.ih - hgt;
     f.svg.appendChild(bar(x, y, bw, hgt, typeColor(r.label)));
 
-    if (r.milestones.length || r.distance === DATA.totals.longest) {
+    if (r.milestones.length || r.distance === longest) {
       f.svg.appendChild(el("text", { class: "mark-label", x: x + bw / 2, y: y - 6, "text-anchor": "middle" },
         [document.createTextNode(r.distance.toFixed(2))]));
     }
@@ -344,6 +363,7 @@ function sessionsChart() {
 /* Shared line-chart renderer with a crosshair + tooltip. */
 function lineChart(hostId, rows, opts) {
   const host = document.getElementById(hostId);
+  if (!rows.length) return emptyState(hostId, opts.empty || "No data in this period.");
   // Half-width cards get a narrower viewBox so labels don't scale down to mush.
   const f = frame(host, { h: opts.h || 230, padL: opts.padL || 46, padR: opts.padR || 16, W: opts.W || 900 });
   const vals = rows.map(opts.value);
@@ -406,8 +426,7 @@ function lineChart(hostId, rows, opts) {
 }
 
 /* ---------- page ---------- */
-function tiles() {
-  const t = DATA.totals;
+function tiles(t) {
   const lost = t.startWeight && t.currentWeight ? (t.startWeight - t.currentWeight) : null;
   const items = [
     ["Total distance", t.distance.toFixed(1), "km", `${t.sessions} sessions logged`],
@@ -422,23 +441,23 @@ function tiles() {
   ).join("");
 }
 
-function legend() {
-  const present = TYPES.filter((t) => DATA.runs.some((r) => r.label === t));
+function legend(runs) {
+  const present = TYPES.filter((t) => runs.some((r) => r.label === t));
   document.getElementById("legend").innerHTML = present.map((t) =>
     `<li><span class="swatch" style="background:${typeColor(t)}"></span>${t}</li>`).join("");
 }
 
-function milestones() {
+function milestones(runs) {
   const rows = [];
-  DATA.runs.forEach((r) => r.milestones.forEach((m) => rows.push([r.date, m])));
+  runs.forEach((r) => r.milestones.forEach((m) => rows.push([r.date, m])));
   document.getElementById("milestones").innerHTML = rows.length
     ? rows.reverse().map(([d, m]) => `<li><span class="d">${shortDate(d)}</span><span>${m}</span></li>`).join("")
     : `<li><span>No milestones recorded yet.</span></li>`;
 }
 
-function table() {
+function table(runs) {
   const head = ["Date", "Session", "Type", "Distance", "Duration", "Pace", "Avg HR", "Max HR", "Cadence", "Weight"];
-  const body = [...DATA.runs].reverse().map((r) => `<tr>
+  const body = [...runs].reverse().map((r) => `<tr>
     <td>${shortDate(r.date)}</td>
     <td>${r.title}</td>
     <td><span class="pill"><span class="swatch" style="background:${typeColor(r.label)}"></span>${r.label}</span></td>
@@ -454,13 +473,84 @@ function table() {
     `<thead><tr>${head.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${body}</tbody>`;
 }
 
+/* ---------- period filtering ---------- */
+let period = "all";
+
+const monthLabel = (ym) => {
+  const [y, m] = ym.split("-");
+  return new Date(+y, +m - 1, 1).toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+};
+const monthsAvailable = () =>
+  [...new Set(DATA.runs.map((r) => r.date.slice(0, 7)))].sort().reverse();
+const runsFor = (p) =>
+  p === "all" ? DATA.runs : DATA.runs.filter((r) => r.date.slice(0, 7) === p);
+
+function isoWeekStart(iso) {
+  const d = new Date(iso + "T00:00:00Z");
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7)); // back to Monday
+  return d.toISOString().slice(0, 10);
+}
+
+/* Distance by ISO (Monday-started) week, gap-filled — mirrors build_dashboard.py. */
+function computeWeekly(runs) {
+  const buckets = new Map();
+  runs.forEach((r) => {
+    if (!r.distance) return;
+    const k = isoWeekStart(r.date);
+    const b = buckets.get(k) || { km: 0, runs: 0 };
+    b.km += r.distance; b.runs += 1;
+    buckets.set(k, b);
+  });
+  const keys = [...buckets.keys()].sort();
+  if (!keys.length) return [];
+  const out = [];
+  const cur = new Date(keys[0] + "T00:00:00Z");
+  const last = new Date(keys.at(-1) + "T00:00:00Z");
+  while (cur <= last) {
+    const k = cur.toISOString().slice(0, 10);
+    const b = buckets.get(k) || { km: 0, runs: 0 };
+    out.push({ week: k, km: Math.round(b.km * 100) / 100, runs: b.runs });
+    cur.setUTCDate(cur.getUTCDate() + 7);
+  }
+  return out;
+}
+
+function computeTotals(runs, weekly) {
+  const moving = runs.filter((r) => r.distance);
+  const weights = runs.filter((r) => r.weight);
+  return {
+    sessions: runs.length,
+    distance: Math.round(moving.reduce((s, r) => s + r.distance, 0) * 10) / 10,
+    duration: Math.round(runs.reduce((s, r) => s + (r.duration || 0), 0) / 60 * 10) / 10,
+    longest: moving.reduce((m, r) => Math.max(m, r.distance), 0),
+    startWeight: weights.length ? weights[0].weight : null,
+    currentWeight: weights.length ? weights.at(-1).weight : null,
+    bestWeeklyKm: weekly.reduce((m, w) => Math.max(m, w.km), 0),
+  };
+}
+
+/* ---------- page ---------- */
 function render() {
-  const runs = DATA.runs;
-  document.getElementById("range").textContent =
-    `${shortDate(runs[0].date)} – ${shortDate(runs.at(-1).date)} ${runs.at(-1).date.slice(0, 4)}`;
+  const runs = runsFor(period);
+  const weekly = computeWeekly(runs);
+  const totals = computeTotals(runs, weekly);
+
+  const sub = document.getElementById("range");
+  if (!runs.length) {
+    sub.textContent = `${monthLabel(period)} · no sessions`;
+  } else if (period === "all") {
+    sub.textContent = `${shortDate(runs[0].date)} – ${shortDate(runs.at(-1).date)} ${runs.at(-1).date.slice(0, 4)} · all sessions`;
+  } else {
+    sub.textContent = `${monthLabel(period)} · ${runs.length} session${runs.length > 1 ? "s" : ""}`;
+  }
   document.getElementById("foot").textContent = `Generated ${DATA.generated} from logs/ — rebuild with tools/build_dashboard.py`;
 
-  tiles(); legend(); weeklyChart(); sessionsChart(); milestones(); table();
+  tiles(totals);
+  legend(runs);
+  weeklyChart(weekly);
+  sessionsChart(runs, totals.longest);
+  milestones(runs);
+  table(runs);
 
   lineChart("c-pace", runs.filter((r) => r.pace && r.label !== "Recovery Walk"), {
     W: 470, h: 250, padR: 30,
@@ -488,12 +578,28 @@ function render() {
   });
 }
 
+function periodControls() {
+  const host = document.getElementById("periods");
+  const opts = [["all", "All time"], ...monthsAvailable().map((m) => [m, monthLabel(m)])];
+  host.innerHTML = opts.map(([v, label]) =>
+    `<button class="period-btn${v === period ? " active" : ""}" data-period="${v}">${label}</button>`).join("");
+  host.querySelectorAll(".period-btn").forEach((b) =>
+    b.addEventListener("click", () => {
+      if (b.dataset.period === period) return;
+      period = b.dataset.period;
+      hideTip();
+      periodControls();
+      render();
+    }));
+}
+
 document.getElementById("theme").addEventListener("click", () => {
   const dark = matchMedia("(prefers-color-scheme: dark)").matches;
   const cur = document.documentElement.dataset.theme || (dark ? "dark" : "light");
   document.documentElement.dataset.theme = cur === "dark" ? "light" : "dark";
 });
 
+periodControls();
 render();
 addEventListener("resize", () => { hideTip(); });
 </script>

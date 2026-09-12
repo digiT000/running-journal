@@ -2,7 +2,7 @@
 
 This document tracks all personal records achieved throughout my running journey.
 
-Last Updated: 2026-08-11
+Last Updated: 2026-09-02
 
 ---
 
@@ -18,7 +18,7 @@ Last Updated: 2026-08-11
 | 5K          | 37:15    | 7:27/km  | 2026-08-09 |
 | 5 Mile      | 01:02:22 | 7:45/km  | 2026-08-09 |
 | 10K         | 1:17:02  | 7:42/km  | 2026-08-09 |
-| Longest Run | 12.31 KM | 8:17/km  | 2026-08-07 |
+| Longest Run | 15.08 KM | 9:01/km  | 2026-09-02 |
 
 > 10K: 1:17:02 was set at the 2026-08-09 Nobel Charity Run. It is the finish-gate/gun time, but I lined up on the front row and crossed the start line immediately, so it effectively matches chip/net time. Previous GPS-verified best was 1:19:51 (split from the 2026-07-26 12K run).
 
@@ -35,6 +35,8 @@ Last Updated: 2026-08-11
 | Below 91 KG              | 2026-07    |
 | Below 90 KG (89.7 KG)    | 2026-07-10 |
 | New Low (89.0 KG)        | 2026-08-09 |
+| Below 88 KG (87.0 KG)    | 2026-09-02 |
+| New Low (87.0 KG)        | 2026-09-02 |
 
 ---
 
@@ -81,6 +83,7 @@ Last Updated: 2026-08-11
 | 2026-07-19 | 10.29 KM |
 | 2026-07-26 | 12.09 KM |
 | 2026-08-07 | 12.31 KM |
+| 2026-09-02 | 15.08 KM |
 
 ---
 
@@ -95,7 +98,7 @@ Last Updated: 2026-08-11
 - [x] First Full 10K
 - [x] First Full 12K _(12.09 KM on 2026-07-26)_
 - [x] First Official 10K Event _(Nobel Charity Run, 2026-08-09)_
-- [ ] Extend long run to 15 KM
+- [x] Extend long run to 15 KM _(15.08 KM on 2026-09-02)_
 - [ ] First Half Marathon (21.1 KM)
 
 ## Weight
@@ -105,8 +108,8 @@ Last Updated: 2026-08-11
 - [x] Below 92 KG
 - [x] Below 91 KG
 - [x] Below 90 KG
-- [ ] Below 89 KG
-- [ ] Below 88 KG
+- [x] Below 89 KG _(87.0 KG on 2026-09-02)_
+- [x] Below 88 KG _(87.0 KG on 2026-09-02)_
 
 ---
 
@@ -118,10 +121,10 @@ Last Updated: 2026-08-11
 
 🏆 10K PB: 1:17:02 _(Nobel Charity Run, 2026-08-09)_
 
-🏆 Longest Run: 12.31 KM
+🏆 Longest Run: 15.08 KM
 
 🏆 Longest Weekly Mileage: 44.13 KM (week of 2026-07-13 → 07-19)
 
-🏆 Lowest Recorded Weight: 89.0 KG
+🏆 Lowest Recorded Weight: 87.0 KG
 
 🎯 Current Goal: Amartha Half Marathon 2026

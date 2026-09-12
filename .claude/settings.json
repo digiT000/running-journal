@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(rtk grep *)"
+      "Bash(rtk grep *)",
+      "Bash(rtk git *)",
+      "Bash(rtk read *)",
+      "Bash(python3 -c ' *)",
+      "Bash(rtk proxy *)",
+      "Bash(python3 tools/build_dashboard.py)",
+      "Bash(node -e ' *)"
     ]
   }
 }

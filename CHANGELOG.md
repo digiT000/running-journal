@@ -4,6 +4,38 @@ All notable changes to my running journey will be documented in this file.
 
 The format is inspired by **Keep a Changelog** and follows a personal versioning system.
 
+## [v1.8.0] - 2026-09-02
+
+### 🏆 Milestone
+
+- 🎉 Completed **First Full 15K** — the first-ever 15 KM run
+- 🎉 New Longest Run: **15.08 KM** (previous 12.31 KM, +2.77 KM)
+
+### 🏅 Personal Best
+
+- New Longest Run PB: **15.08 KM** (previous 12.31 KM on 2026-08-07)
+- New Lowest Recorded Weight: **87.0 KG** (previous 89.0 KG on 2026-08-09)
+
+### 💪 Improved
+
+- First successful use of an energy gel during a long run
+- Evening timing avoided the heat issues from the earlier 16 KM attempts (2026-08-15/16)
+
+### 📊 Stats
+
+- Distance: 15.08 KM
+- Pace: 9:01/km
+- Average HR: 155 bpm
+- Cadence: 165 spm
+- Weight: 87.0 KG
+
+### 📝 Notes
+
+- Leg pain began around km 14 and continued to the finish; monitor before the next long run
+- No weight logged between 2026-08-10 and this session, so the 87.0 KG reading reflects roughly three weeks of untracked change
+
+---
+
 ## [v1.7.0] - 2026-08-09
 
 ### 🏆 Milestone
@@ -420,19 +452,20 @@ The format is inspired by **Keep a Changelog** and follows a personal versioning
 | v1.5.0  | First Full 12K & 10K PB 01:19:51          |
 | v1.6.0  | New Longest Run 12.31 KM                   |
 | v1.7.0  | First Official 10K Event & 10K PB 1:17:02 & 5K PB 37:15 & 5 Mile PB 01:02:22 |
+| v1.8.0  | First Full 15K & New Longest Run 15.08 KM & Weight 87.0 KG |
 
 ---
 
 # 🚧 Next Release
 
-## v1.8.0
+## v1.9.0
 
 Target Features:
 
-- [x] Extend the long run beyond 12 KM _(12.31 KM on 2026-08-07)_
-- [ ] Extend the long run to 15 KM
+- [x] Extend the long run to 15 KM _(15.08 KM on 2026-09-02)_
+- [x] Weight below 89 KG _(87.0 KG on 2026-09-02)_
 - [ ] Hold weekly mileage above 45 KM
-- [ ] Weight below 89 KG
+- [ ] First Half Marathon (21.1 KM)
 
 ---
 

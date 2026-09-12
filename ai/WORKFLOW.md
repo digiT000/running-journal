@@ -139,7 +139,39 @@ Never estimate missing values.
 
 ---
 
-# Step 7 — Create Workout Log
+# Step 7 — Check Training Plan
+
+Before creating a new workout log, check whether a plan exists for that date.
+
+Look in
+
+```
+monthly-plan/<YYYY-MM>.md
+```
+
+for the month the log date falls in.
+
+If a planned session exists for that date:
+
+- Note the planned workout (session type, target distance, target HR/effort).
+- After the actual workout is recorded, determine compliance:
+
+```
+Accomplished
+Partially Accomplished
+Not Accomplished
+Deviated (different session than planned)
+```
+
+- Carry this into the log's Planned vs Actual section (Step 11).
+
+If no plan file exists for that month, or no session is defined for that date, skip this step — not every log needs a matching plan entry.
+
+Never assume a plan was followed without checking `monthly-plan/` explicitly.
+
+---
+
+# Step 8 — Create Workout Log
 
 Generate a new Markdown file.
 
@@ -178,7 +210,7 @@ Related Workout
 
 ---
 
-# Step 8 — Coach Analysis
+# Step 9 — Coach Analysis
 
 Every workout should include:
 
@@ -212,7 +244,7 @@ One actionable recommendation.
 
 ---
 
-# Step 9 — Journey Context
+# Step 10 — Journey Context
 
 Every workout should explain where it fits in the user's running journey.
 
@@ -234,9 +266,9 @@ The workout should never feel isolated.
 
 ---
 
-# Step 10 — Planned vs Actual
+# Step 11 — Planned vs Actual
 
-If the workout includes a training plan:
+If the workout includes a training plan (from `monthly-plan/` per Step 7, or from user-provided data):
 
 Compare
 
@@ -261,7 +293,7 @@ AI should explain:
 
 ---
 
-# Step 11 — Detect Milestones
+# Step 12 — Detect Milestones
 
 Examples
 
@@ -283,7 +315,7 @@ CHANGELOG.md
 
 ---
 
-# Step 12 — Detect Personal Bests
+# Step 13 — Detect Personal Bests
 
 Automatically compare against historical workouts.
 
@@ -306,7 +338,7 @@ PERSONAL_BESTS.md
 
 ---
 
-# Step 13 — Weekly Review
+# Step 14 — Weekly Review
 
 Weekly reports should include
 
@@ -324,7 +356,7 @@ Weekly reports must only use workout logs.
 
 ---
 
-# Step 14 — Monthly Review
+# Step 15 — Monthly Review
 
 Monthly reports should include
 
@@ -340,7 +372,7 @@ Monthly reports should include
 
 ---
 
-# Step 15 — Repository Suggestions
+# Step 16 — Repository Suggestions
 
 AI may recommend updates to
 
@@ -368,6 +400,10 @@ New Workout?
 ↓
 
 YES
+
+↓
+
+Check monthly-plan/ for that date
 
 ↓
 
@@ -454,6 +490,20 @@ The AI should never
 - Recommend unrealistic mileage increases
 - Ignore pain or injury
 - Fabricate conclusions
+
+---
+
+# Training Progression Rule
+
+When proposing weekly mileage targets in a training plan, AI must default to a maximum **10% increase in total weekly mileage compared to the previous week**, based on the previous week's actual (or, if planning ahead, its target) mileage.
+
+Exceptions:
+
+- Cutback / recovery weeks may reduce volume instead of increasing it.
+- Taper weeks before a race should reduce volume regardless of this rule.
+- The user may explicitly override this rule for a specific week.
+
+This is a default ceiling, not a target to always hit — a flat or reduced week is still valid when recovery, injury, or life circumstances call for it.
 
 ---
 

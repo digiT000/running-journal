@@ -127,4 +127,4 @@ Last Updated: 2026-09-02
 
 🏆 Lowest Recorded Weight: 87.0 KG
 
-🎯 Current Goal: Amartha Half Marathon 2026
+🎯 Current Goal: Half Marathon (November 7, 2026)

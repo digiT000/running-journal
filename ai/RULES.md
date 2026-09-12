@@ -133,10 +133,14 @@ weekly/
 
 monthly/
 
+monthly-plan/
+
 yearly/
 
 assets/
 ```
+
+`monthly-plan/` holds forward-looking training plans (e.g. `monthly-plan/2026-09.md`) — proposed schedules, not reviews. Unlike `weekly/` and `monthly/`, files here are NOT generated from `logs/`; they are written ahead of time and compared against later. A plan file's period does not need to align exactly to a calendar month (a training week can span two months) — the filename just anchors it to the month it mostly falls in.
 
 ---
 

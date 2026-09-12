@@ -40,9 +40,9 @@ First Full 10K ✅
 
 # 🎯 Target Race
 
-**Amartha Half Marathon 2026**
+**Half Marathon**
 
-Target Date: **September 2026** (exact date not yet confirmed)
+Target Date: **November 7, 2026**
 
 This is now the primary goal driving training, replacing the previous standalone "First Full 10K" target. 8K, 9K, and 10K remain as progression milestones on the way there — training is now structured as Half Marathon base-building (per Runna's Half Marathon plan).
 
@@ -52,7 +52,7 @@ This is now the primary goal driving training, replacing the previous standalone
 
 ## 🎯 Goal
 
-**Amartha Half Marathon 2026 — Base Building**
+**Half Marathon — Base Building**
 
 The full 5K → 10K progression is now complete. Training shifts from "unlock the next distance" to building sustainable Half Marathon volume.
 
@@ -75,7 +75,7 @@ Status:
 - **First Full 9K** ✅ 2026-07-19 (passed through during the 10K)
 - **First Full 10K** ✅ 2026-07-19 (10.29 KM @ 8:28/km, no walking, finished injury-free)
 
-_Immediate next milestone on the way to the Amartha Half Marathon 2026._
+_Immediate next milestone on the way to the Half Marathon (target: November 7, 2026)._
 
 ---
 
@@ -142,7 +142,7 @@ _Immediate next milestone on the way to the Amartha Half Marathon 2026._
 | First Full 12K          | ✅     |
 | First Official 10K Event | ✅    |
 | First Full 15K          | ✅     |
-| Half Marathon (Amartha 2026, Sept) | 🟡 In Progress |
+| Half Marathon (Nov 7, 2026)        | 🟡 In Progress |
 | Marathon                | 🔒     |
 
 ---
@@ -217,7 +217,7 @@ The long-term vision is:
 
 - Stay healthy
 - Build discipline
-- Complete the Amartha Half Marathon 2026 (target: September 2026)
+- Complete the Half Marathon (target: November 7, 2026)
 - Complete a Marathon
 - Inspire others through consistency
 

@@ -14,7 +14,7 @@
 
 Welcome to my personal running journal.
 
-This repository documents my journey from an overweight beginner runner toward my primary goal: the **Amartha Half Marathon 2026** (target: September 2026). The 5K → 10K progression is complete; training is now Half Marathon base building, with a **Marathon** as the long-term goal beyond that.
+This repository documents my journey from an overweight beginner runner toward my primary goal: the **Half Marathon** (target: November 7, 2026). The 5K → 10K progression is complete; training is now Half Marathon base building, with a **Marathon** as the long-term goal beyond that.
 
 As a software engineer, I wanted to treat my fitness journey like a software project:
 
@@ -42,7 +42,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 
 # 🎯 Current Goal
 
-**Primary Goal: Amartha Half Marathon 2026 (target: September 2026)**
+**Primary Goal: Half Marathon (target: November 7, 2026)**
 
 - [x] Build a running habit
 - [x] First Full 5K
@@ -51,7 +51,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 - [x] First Full 8K
 - [x] First Full 9K
 - [x] First Full 10K
-- [ ] 🎯 Half Marathon (21.1K) — Amartha Half Marathon 2026
+- [ ] 🎯 Half Marathon (21.1K) — target: November 7, 2026
 - [ ] Marathon (42.2K)
 
 ---
@@ -115,6 +115,8 @@ running-journal/
 ├── weekly/
 │
 ├── monthly/
+│
+├── monthly-plan/
 │
 └── assets/
 ```
@@ -188,7 +190,7 @@ First 9K ✅
       ↓
 First 10K ✅
       ↓
-🏆 Half Marathon (Amartha 2026 — target: September 2026)
+🏆 Half Marathon (target: November 7, 2026)
       ↓
 Marathon
 ```

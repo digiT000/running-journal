@@ -4,6 +4,26 @@ All notable changes to my running journey will be documented in this file.
 
 The format is inspired by **Keep a Changelog** and follows a personal versioning system.
 
+## [v1.9.0] - 2026-10-29
+
+### 🎯 Goal Change
+
+- Half Marathon target of **November 7, 2026** was not achieved
+- New goal: **JAKIM Half Marathon on June 13, 2027**
+- GOALS.md, README.md, PROFILE.md and PERSONAL_BESTS.md updated to the new target
+
+### 🔄 Training
+
+- Training interrupted by the volcanic eruption break (2026-09-05 → 09-11), then about a month of rest after the 2026-09-16 10 KM run
+- Returned to running with 5.01 KM runs on 2026-10-28 (8:39/km, HR 151) and 2026-10-29 (8:41/km, HR 151)
+- Rebuild phase begins, ahead of Half Marathon base building
+
+### 📝 Notes
+
+- No new PB or distance milestone in this release
+
+---
+
 ## [v1.8.0] - 2026-09-02
 
 ### 🏆 Milestone

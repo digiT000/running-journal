@@ -11,10 +11,10 @@ Level:
 10 🟢
 
 Experience:
-219.79 / 250 KM
+365.0 KM
 
 Current Quest:
-🏅 Half Marathon Base Building
+🏅 Rebuild & Half Marathon Base Building
 
 Main Attributes
 
@@ -39,7 +39,7 @@ Main Attributes
 | Nationality     | Indonesia 🇮🇩 |
 | Height          | 170 cm       |
 | Starting Weight | 96 kg        |
-| Current Weight  | 90.1 kg      |
+| Current Weight  | 86 kg        |
 | Goal Weight     | 75–80 kg     |
 
 ---
@@ -50,7 +50,7 @@ Main Attributes
 | ----------------------- | ------------------------ |
 | Running Experience      | Beginner                 |
 | Started Running         | June 2026                |
-| Current Goal            | Half Marathon (target: November 7, 2026) |
+| Current Goal            | Half Marathon (JAKIM, June 13, 2027) |
 | Long-term Goal          | Marathon                 |
 | Training Days           | 4x/week                  |
 | Preferred Training Time | Morning                  |
@@ -88,7 +88,7 @@ Main Attributes
 
 | Metric                 |    Value |
 | ---------------------- | -------: |
-| Longest Run            | 12.31 km |
+| Longest Run            | 15.08 km |
 | Longest Weekly Mileage | 44.13 km |
 | Easy Pace              | ~8:28/km |
 | Comfortable Distance   | 5–12 km  |
@@ -103,7 +103,7 @@ Main Attributes
 | 5K          | 37:15    |
 | 5 Mile      | 01:02:22 |
 | 10K         | 1:17:02  |
-| Longest Run | 12.31 km |
+| Longest Run | 15.08 km |
 
 ---
 
@@ -178,7 +178,7 @@ Post-run:
 
 # 🚀 Next Objective
 
-🏅 Build toward the Half Marathon (Nov 7, 2026) — extend the long run toward the 21.1 KM race distance
+🏅 Rebuild the base after the break, then build toward the Half Marathon (JAKIM, June 13, 2027) — extend the long run toward the 21.1 KM race distance
 
 ---
 

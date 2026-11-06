@@ -30,7 +30,7 @@ First Full 9K ✅
 First Full 10K ✅
   │
   ▼
-🏅 Half Marathon (21.1K) — Target: September 2026
+🏅 Half Marathon (21.1K) — JAKIM event, June 13, 2027
   │
   ▼
 🏅 Marathon (42.2K)
@@ -42,9 +42,11 @@ First Full 10K ✅
 
 **Half Marathon**
 
-Target Date: **November 7, 2026**
+Event: **JAKIM Half Marathon**
 
-This is now the primary goal driving training, replacing the previous standalone "First Full 10K" target. 8K, 9K, and 10K remain as progression milestones on the way there — training is now structured as Half Marathon base-building (per Runna's Half Marathon plan).
+Target Date: **June 13, 2027**
+
+The previous target (November 7, 2026) was not achieved: a forced break after the volcanic eruption (Sept 5–11) and a further rest of about a month (after 2026-09-16) interrupted the build. The goal is now the JAKIM event on June 13, 2027, which leaves time to rebuild the base and train for it properly. Training restarted on 2026-10-28.
 
 ---
 
@@ -52,14 +54,15 @@ This is now the primary goal driving training, replacing the previous standalone
 
 ## 🎯 Goal
 
-**Half Marathon — Base Building**
+**Half Marathon (JAKIM, June 13, 2027) — Rebuild & Base Building**
 
-The full 5K → 10K progression is now complete. Training shifts from "unlock the next distance" to building sustainable Half Marathon volume.
+The full 5K → 10K progression is complete. After the break, training restarts from easy 5K runs (2026-10-28 and 2026-10-29) and builds back up gradually toward sustainable Half Marathon volume.
 
 ### Success Criteria
 
 - [x] Extend the long run beyond 12 KM _(12.31 KM on 2026-08-07)_
 - [x] Extend the long run to 15 KM _(15.08 KM on 2026-09-02)_
+- [ ] Rebuild a consistent weekly routine after the break
 - [ ] Hold weekly mileage above 40 KM consistently
 - [ ] Solve hydration for runs over 10 KM
 - [ ] Stay injury-free through the build
@@ -75,7 +78,7 @@ Status:
 - **First Full 9K** ✅ 2026-07-19 (passed through during the 10K)
 - **First Full 10K** ✅ 2026-07-19 (10.29 KM @ 8:28/km, no walking, finished injury-free)
 
-_Immediate next milestone on the way to the Half Marathon (target: November 7, 2026)._
+_Immediate next milestone: rebuild base volume, then return to 10 KM+ long runs on the way to the Half Marathon (JAKIM, June 13, 2027)._
 
 ---
 
@@ -90,6 +93,13 @@ _Immediate next milestone on the way to the Half Marathon (target: November 7, 2
 - [x] Complete First Full 8K
 - [x] Complete First Full 9K
 - [x] Complete First Full 10K
+- [ ] Rebuild the base and return to 10 KM+ long runs
+
+---
+
+## 🗓️ 2027 Running
+
+- [ ] Complete the Half Marathon (JAKIM, June 13, 2027)
 
 ---
 
@@ -142,7 +152,7 @@ _Immediate next milestone on the way to the Half Marathon (target: November 7, 2
 | First Full 12K          | ✅     |
 | First Official 10K Event | ✅    |
 | First Full 15K          | ✅     |
-| Half Marathon (Nov 7, 2026)        | 🟡 In Progress |
+| Half Marathon (JAKIM, Jun 13, 2027) | 🟡 In Progress |
 | Marathon                | 🔒     |
 
 ---
@@ -217,7 +227,7 @@ The long-term vision is:
 
 - Stay healthy
 - Build discipline
-- Complete the Half Marathon (target: November 7, 2026)
+- Complete the Half Marathon (JAKIM, June 13, 2027)
 - Complete a Marathon
 - Inspire others through consistency
 

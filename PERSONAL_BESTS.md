@@ -127,4 +127,4 @@ Last Updated: 2026-09-02
 
 🏆 Lowest Recorded Weight: 87.0 KG
 
-🎯 Current Goal: Half Marathon (November 7, 2026)
+🎯 Current Goal: Half Marathon (JAKIM, June 13, 2027)

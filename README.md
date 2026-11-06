@@ -1,12 +1,12 @@
 # 🏃 Road to Half Marathon
 
-![Goal](https://img.shields.io/badge/Goal-Half_Marathon_Sept_2026-blue)
+![Goal](https://img.shields.io/badge/Goal-Half_Marathon_Jun_2027-blue)
 
-![Current](https://img.shields.io/badge/Current-12K-success)
+![Current](https://img.shields.io/badge/Current-15K-success)
 
-![Weight](https://img.shields.io/badge/Weight-90.1kg-orange)
+![Weight](https://img.shields.io/badge/Weight-86kg-orange)
 
-![Mileage](https://img.shields.io/badge/Total-219.79KM-red)
+![Mileage](https://img.shields.io/badge/Total-365.0KM-red)
 
 ![Status](https://img.shields.io/badge/Status-Training-green)
 
@@ -14,7 +14,7 @@
 
 Welcome to my personal running journal.
 
-This repository documents my journey from an overweight beginner runner toward my primary goal: the **Half Marathon** (target: November 7, 2026). The 5K → 10K progression is complete; training is now Half Marathon base building, with a **Marathon** as the long-term goal beyond that.
+This repository documents my journey from an overweight beginner runner toward my primary goal: the **Half Marathon** (JAKIM event, target: June 13, 2027; the earlier November 7, 2026 target was not achieved). The 5K → 10K progression is complete; training restarted on 2026-10-28 after a break and is now rebuilding toward Half Marathon base building, with a **Marathon** as the long-term goal beyond that.
 
 As a software engineer, I wanted to treat my fitness journey like a software project:
 
@@ -33,7 +33,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 | Age             | 27                 |
 | Height          | 170 cm             |
 | Starting Weight | **96 kg**          |
-| Current Weight  | **90.1 kg**        |
+| Current Weight  | **86 kg**          |
 | Watch           | Huawei Band 11     |
 | Training App    | Runna              |
 | Coach           | AI Coach (ChatGPT) |
@@ -42,7 +42,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 
 # 🎯 Current Goal
 
-**Primary Goal: Half Marathon (target: November 7, 2026)**
+**Primary Goal: Half Marathon (JAKIM event, target: June 13, 2027)**
 
 - [x] Build a running habit
 - [x] First Full 5K
@@ -51,7 +51,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 - [x] First Full 8K
 - [x] First Full 9K
 - [x] First Full 10K
-- [ ] 🎯 Half Marathon (21.1K) — target: November 7, 2026
+- [ ] 🎯 Half Marathon (21.1K) — JAKIM event, target: June 13, 2027
 - [ ] Marathon (42.2K)
 
 ---
@@ -60,9 +60,9 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 
 | Metric                 |        Value |
 | ---------------------- | -----------: |
-| Total Sessions         |            34 |
-| Total Distance         | **219.79 KM** |
-| Longest Run            |  **12.31 KM** |
+| Total Sessions         |            52 |
+| Total Distance         | **365.0 KM** |
+| Longest Run            |  **15.08 KM** |
 | Longest Weekly Mileage |  **44.13 KM** |
 | Easy Pace              |      ~8:28/km |
 | Easy Run HR            |   149–157 bpm |
@@ -77,7 +77,7 @@ As a software engineer, I wanted to treat my fitness journey like a software pro
 | 5K          | 37:15    |
 | 5 Mile      | 01:02:22 |
 | 10K         | 1:17:02  |
-| Longest Run | 12.31 KM |
+| Longest Run | 15.08 KM |
 
 ---
 
@@ -190,7 +190,7 @@ First 9K ✅
       ↓
 First 10K ✅
       ↓
-🏆 Half Marathon (target: November 7, 2026)
+🏆 Half Marathon (JAKIM, target: June 13, 2027)
       ↓
 Marathon
 ```
@@ -242,4 +242,4 @@ Especially my AI Coach, who has been analyzing every run, celebrating every mile
 2026-08-09 — 🏆 First Official 10K Event (Nobel Charity Run) + 10K PB 1:17:02 + 5K PB 37:15 + 5 Mile PB 01:02:22
 
 🚧 Next milestone:
-Half Marathon base building — extend the long run toward 15 KM
+Rebuild after the break (restarted 2026-10-28), then return to longer runs toward the Half Marathon

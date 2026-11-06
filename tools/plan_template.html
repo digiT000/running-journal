@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Training Plan (locked)</title>
+<style>
+:root { --bg:#f6f7f9; --card:#fff; --text:#1c2230; --muted:#667085; --line:#e3e6ec; --accent:#2f6fed; --good:#1a8f5a; --warn:#c77700; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --card:#171b24; --text:#e8ebf2; --muted:#9aa3b5; --line:#262c3a; --accent:#6c9bff; --good:#3ccf8e; --warn:#f0a43a; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.55 -apple-system, system-ui, "Segoe UI", sans-serif; }
+.wrap { max-width:980px; margin:0 auto; padding:24px 16px 60px; }
+a { color:var(--accent); }
+h1 { font-size:24px; margin:0 0 4px; } h2 { font-size:18px; margin:0 0 10px; } h3 { font-size:15px; margin:14px 0 6px; }
+.sub { color:var(--muted); font-size:13px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; margin:16px 0; }
+.lock { max-width:380px; margin:18vh auto 0; text-align:center; }
+.lock input { width:100%; padding:11px 12px; font-size:16px; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--text); margin:12px 0 8px; }
+button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:10px 16px; font-size:15px; cursor:pointer; }
+.err { color:#d33; min-height:20px; font-size:13px; }
+ul { margin:6px 0 0; padding-left:20px; } li { margin:3px 0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px; }
+.pill { display:inline-block; padding:2px 9px; border-radius:99px; font-size:12px; border:1px solid var(--line); color:var(--muted); }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+details { border:1px solid var(--line); border-radius:10px; margin:8px 0; background:var(--card); }
+details.now { border-color:var(--accent); box-shadow:0 0 0 1px var(--accent); }
+summary { cursor:pointer; padding:10px 14px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+summary .bar { flex:1; min-width:80px; height:8px; background:var(--line); border-radius:4px; overflow:hidden; }
+summary .bar i { display:block; height:100%; background:var(--accent); }
+.det { padding:0 14px 12px; overflow-x:auto; }
+.km { white-space:nowrap; font-weight:600; }
+.rest { color:var(--muted); }
+.chart { display:flex; align-items:flex-end; gap:3px; height:120px; margin-top:8px; }
+.chart div { flex:1; background:var(--accent); border-radius:3px 3px 0 0; min-height:2px; opacity:.85; }
+.chart div.cut { background:var(--warn); }
+.chart div.race { background:var(--good); }
+.hide { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="lock" class="card lock">
+    <h1>🔒 Training Plan</h1>
+    <div class="sub">Private. Enter the password to unlock.</div>
+    <form id="f"><input id="pw" type="password" autocomplete="current-password" placeholder="Password" autofocus>
+    <div class="err" id="err"></div><button type="submit">Unlock</button></form>
+    <p class="sub"><a href="index.html">← Back to the dashboard</a></p>
+  </div>
+  <div id="plan" class="hide"></div>
+</div>
+<script>
+const PAYLOAD = /*__PAYLOAD__*/null;
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function decrypt(pw) {
+  const enc = new TextEncoder();
+  const base = await crypto.subtle.importKey("raw", enc.encode(pw), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey({ name:"PBKDF2", salt:b64(PAYLOAD.salt), iterations:PAYLOAD.iter, hash:"SHA-256" }, base, { name:"AES-GCM", length:256 }, false, ["decrypt"]);
+  const buf = await crypto.subtle.decrypt({ name:"AES-GCM", iv:b64(PAYLOAD.iv) }, key, b64(PAYLOAD.ct));
+  return JSON.parse(new TextDecoder().decode(buf));
+}
+function el(tag, props, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(props || {})) { if (k === "class") n.className = v; else n.setAttribute(k, v); }
+  for (const k of kids.flat()) if (k != null) n.append(k.nodeType ? k : document.createTextNode(String(k)));
+  return n;
+}
+const ul = a => el("ul", {}, a.map(x => el("li", {}, x)));
+const fmt = iso => new Date(iso + "T00:00:00").toLocaleDateString("en-GB", { day:"numeric", month:"short" });
+const dayDate = (start, i) => { const d = new Date(start + "T00:00:00"); d.setDate(d.getDate() + i); return d.toLocaleDateString("en-GB", { day:"numeric", month:"short" }); };
+
+function render(p) {
+  const root = document.getElementById("plan"); root.replaceChildren();
+  const today = new Date().toISOString().slice(0, 10);
+  const cur = p.weeks.filter(w => w.start <= today).pop();
+  const maxKm = Math.max(...p.weeks.map(w => w.total));
+  const days = Math.ceil((new Date(p.race) - new Date(today)) / 864e5);
+
+  root.append(el("h1", {}, p.title),
+    el("div", { class:"sub" }, `Starts ${fmt(p.start)} 2026 · ${p.weeks.length} weeks · ` + (days > 0 ? `${days} days to race day` : "Race day passed")));
+
+  root.append(el("div", { class:"card" }, el("h2", {}, "Goals"),
+    el("div", { class:"grid" }, Object.entries(p.goals).map(([k, v]) => el("div", {}, el("span", { class:"pill" }, "Goal " + k), el("div", {}, v)))),
+    el("h3", {}, "Setup"), el("div", {}, p.setup)));
+
+  const bars = el("div", { class:"chart" }, p.weeks.map(w => {
+    const d = el("div", { title:`Week ${w.n}: ${w.total} KM` });
+    d.style.height = (w.total / maxKm * 100) + "%";
+    if (w.phase === "Race week") d.className = "race"; else if (/Cutback/.test(w.days[1].x + w.days[3].x + w.days[5].x) || /Cutback/.test(w.days[3].x)) d.className = "cut";
+    return d;
+  }));
+  root.append(el("div", { class:"card" }, el("h2", {}, "Weekly volume (KM)"), el("div", { class:"sub" }, "Orange = cutback / reset weeks · green = race week"), bars));
+
+  root.append(el("div", { class:"card" }, el("h2", {}, "Phases"),
+    el("table", {}, el("tr", {}, ["Phase", "Weeks", "Dates", "Goal"].map(h => el("th", {}, h))),
+      p.phases.map(ph => el("tr", {}, el("td", {}, el("b", {}, ph.name)), el("td", {}, ph.weeks), el("td", {}, ph.dates), el("td", {}, ph.goal))))));
+
+  root.append(el("div", { class:"card" }, el("h2", {}, "Training rules"), ul(p.rules),
+    el("h3", {}, "Assumptions"), ul(p.assumptions),
+    el("h3", {}, "Fueling & hydration"), ul(p.fueling),
+    el("h3", {}, "Ramadan (Weeks 14–17)"), el("div", {}, p.ramadan)));
+
+  root.append(el("div", { class:"card" }, el("h2", {}, "Checkpoints"),
+    el("table", {}, el("tr", {}, ["When", "What should be true", "If not"].map(h => el("th", {}, h))),
+      p.checkpoints.map(c => el("tr", {}, el("td", {}, c.when), el("td", {}, c.check), el("td", {}, c.if_not))))));
+
+  root.append(el("div", { class:"card" }, el("h2", {}, "Strength"),
+    el("div", { class:"grid" }, ["A (Mon)", "B (Wed)"].map(k => el("div", {}, el("h3", {}, "Session " + k), ul(p.strength[k])))),
+    el("div", { class:"sub" }, p.strength.note)));
+
+  root.append(el("div", { class:"card" }, el("h2", {}, "Race plan"), ul(p.race_plan)));
+
+  root.append(el("h2", {}, "Week by week"));
+  for (const w of p.weeks) {
+    const d = el("details", { class: cur && cur.n === w.n ? "now" : "" });
+    if (cur && cur.n === w.n) d.open = true;
+    const bar = el("span", { class:"bar" }, el("i")); bar.firstChild.style.width = (w.total / maxKm * 100) + "%";
+    d.append(el("summary", {}, el("b", {}, `Week ${w.n}`), el("span", { class:"sub" }, `${fmt(w.start)} · ${w.phase}`), bar,
+      el("span", { class:"km" }, `${w.total} KM`), cur && cur.n === w.n ? el("span", { class:"pill" }, "this week") : null),
+      el("div", { class:"det" }, el("table", {}, el("tr", {}, ["Day", "Session", "KM", "Details"].map(h => el("th", {}, h))),
+        w.days.map((x, i) => el("tr", {}, el("td", {}, `${x.d} ${dayDate(w.start, i)}`),
+          el("td", { class: x.km ? "" : "rest" }, x.t), el("td", { class:"km" }, x.km ? x.km : ""), el("td", {}, x.x))))));
+    root.append(d);
+  }
+  root.append(el("p", { class:"sub" }, el("a", { href:"index.html" }, "← Back to the dashboard")));
+}
+
+document.getElementById("f").addEventListener("submit", async e => {
+  e.preventDefault();
+  const err = document.getElementById("err"); err.textContent = "";
+  try {
+    const plan = await decrypt(document.getElementById("pw").value);
+    document.getElementById("lock").classList.add("hide");
+    document.getElementById("plan").classList.remove("hide");
+    document.title = "Training Plan";
+    render(plan);
+  } catch (x) { err.textContent = "Wrong password."; }
+});
+</script>
+</body>
+</html>
